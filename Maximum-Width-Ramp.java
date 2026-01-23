@@ -1,6 +1,6 @@
 1class Solution {
 2    public int maxWidthRamp(int[] arr) {
-3        Stack<Integer> st  = new Stack<>();
+3       ArrayDeque<Integer> st  = new ArrayDeque<>();
 4        for(int i = 0;i<arr.length;i++){
 5            if(st.size()==0){
 6                st.push(0);
@@ -23,6 +23,5 @@
 23            
 24        }
 25      return max;  
-26
-27    }
-28}
+26    }
+27}
